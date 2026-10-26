@@ -1,0 +1,69 @@
+# ============================================================
+# BLHM studio — 版本库忽略清单
+# 原则：只跟踪「人能改、且会变」的东西（ArkTS / C++ 源码 / 配置 / 资源）。
+#       预编译依赖、构建产物、签名材料、历史快照一律排除。
+# ============================================================
+
+# ---- 构建产物 / 缓存 ----
+entry/build/
+entry/.cxx/
+entry/.preview/
+.hvigor/
+.cxx/
+oh_modules/
+node_modules/
+build/
+out/
+dist/
+tmp/
+local.properties
+.cache/
+
+# ---- 预编译依赖（CMakeLists.txt 用绝对路径硬编码，各自 120MB~1.8GB）----
+slic3r-deps/
+ffmpeg-6.1.2/
+occt-build/
+OCCT-7_6_0/
+usr/
+
+# ---- 历史 hap 快照 / 大二进制包 ----
+hap_*.7z
+*.7z
+*.pkg.tar
+*.pkg.tar.zst
+*.tar.xz
+*.tar.gz
+*.tgz
+*.zip
+*.hap
+*.app
+*.so
+*.a
+
+# ---- 签名材料（DevEco 自动签名在 ~/.ohos，工程内不应出现）----
+*.p12
+*.p7b
+*.cer
+*.csr
+*.keystore
+
+# ---- 调试噪声 ----
+_verify/
+_build_baseline.log
+*.log
+*.db
+hap_exit*.txt
+dir.html
+msys_dir.html
+*_probe.txt
+
+# ---- msys/arch 包解压残留（root 下 pacman 元数据）----
+.PKGINFO
+.BUILDINFO
+.MTREE
+
+# ---- IDE / 系统 ----
+.idea/
+*.iml
+.DS_Store
+Thumbs.db

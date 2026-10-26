@@ -1,0 +1,8 @@
+{
+  "modelVersion": "6.0.0",
+  "description": "Bambu Studio 鸿蒙版 3D 打印切片 APP",
+  "dependencies": {},
+  "devDependencies": {
+    "@ohos/hypium": "1.0.19"
+  }
+}

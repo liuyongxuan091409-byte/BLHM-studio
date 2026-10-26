@@ -1,0 +1,6 @@
+{
+  "name": "libentry.so",
+  "types": "./index.d.ts",
+  "version": "1.0.0",
+  "description": "Bambu Studio HM 切片内核 NAPI 接口类型声明"
+}
